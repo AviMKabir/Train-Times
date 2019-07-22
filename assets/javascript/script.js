@@ -47,4 +47,42 @@ $("#submit-btn").on("click", function (event) {
     firstTime: firstTime
 
   });
+
+
+
+// clear inputs
+$('input').val("");
+
+
 });
+
+// function when the child is added
+database.ref().on("child_added", function (childSnap) {
+
+
+  console.log(childSnap.val().name);
+  console.log(childSnap.val().destination);
+  console.log(childSnap.val().frequency);
+  console.log(childSnap.val().firstTime);
+  
+  // variables for the database snapshots
+  firebaseName = childSnap.val().name;
+  firebaseDestination= childSnap.val().destination;
+  firebaseFrequency = childSnap.val().frequency;
+  firebaseFirstTime = childSnap.val().firstTime;
+  
+  var tr = $("<tr>");
+  
+  var tdName = $("<td>").text(firebaseName);
+  var tdDestination = $("<td>").text(firebaseDestination);
+  var tdFrequency = $("<td>").text(firebaseFrequency);
+  // var tdFirstTime = $("<td>").text(firebaseFirstTime);
+  // dont need a td for the first time
+  
+  tr.append(tdName).append(tdDestination).append(tdFrequency);
+  
+  $(".trains-tbody").append(tr);
+  
+  
+  
+  });
