@@ -1,2 +1,20 @@
 # Train-Times
-When's the next train to ____?
+
+# Simple Train Scheduler App using
+
+* Firebase
+
+* DOM Manipulation
+
+* MomentJs
+
+* jQuery
+
+* Click events
+
+* Inputs
+
+* Bootstrap
+
+
+

@@ -1,0 +1,66 @@
+body {
+
+
+background-image: url(../images/lilypads.png);
+
+
+}
+
+.jumbotron {
+
+
+background: #FFD0C7;
+
+
+}
+
+h1 {
+
+    font-family: 'Fascinate', cursive;
+
+
+
+}
+
+h4 {
+
+
+    font-family: 'Work Sans', sans-serif;
+
+
+
+}
+
+th {
+
+    font-family: 'Work Sans', sans-serif;
+
+   
+
+
+}
+
+
+tr {
+
+
+
+    font-family: 'Work Sans', sans-serif;
+
+
+
+    
+}
+
+.card-header,
+label {
+
+    font-family: 'Work Sans', sans-serif;
+
+    font-weight: bold;
+
+
+background-color: #FFD0C7;
+
+
+}
